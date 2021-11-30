@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Indie+Flower&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: white;
+    color: black; 
+    font-family: 'Courgette', cursive;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+
+}
+.main{
+    padding: 1.2rem;
+}
+.sections{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+h1{
+    text-align: center;
+    margin-top: 3rem;
+      
+}
+h1, h2{
+    font-family: 'Indie Flower', cursive;
+    font-size: 3rem;
+}
+.food1{
+    background-color:#70E07F;
+    
+}
+.food2{
+    background-color:#6FF7A8;
+    
+}
+.food3{
+    background-color:#6BEDC6;
+
+}
+.food1, .food2, .food3 {
+    border: 1px solid black;
+    margin: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+section div {
+    display: flex;
+    margin-left: auto;    
+}
+h2{
+    text-align: right;
+    border: 1px solid black;
+        
+}
+.food1 h2, .food2 h2, .food3 h2 {
+    background-color: rgba(128,128,128,0.4);
+    padding: 1.2rem;
+}
+.food1 p, .food2 p, .food3 p{
+    padding: 1rem;
+
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+
+.sections{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "chicken beef"
+    "sushi sushi";
+}
+
+.food1{
+grid-area: chicken;
+}
+
+.food2{
+    grid-area: beef;
+}
+
+.food3{
+    grid-area: sushi;
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+  
+
+    .sections{
+        flex-direction: column;
+    }
+}
+
