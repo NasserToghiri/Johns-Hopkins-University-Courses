@@ -1,5 +1,5 @@
   <h1>
- Johns Hopkins University Course 
+ Johns Hopkins University Course - Module 2
  </h1>
  
  <h2>
